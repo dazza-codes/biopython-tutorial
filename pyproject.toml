@@ -1,0 +1,49 @@
+[tool.poetry]
+name = "biopython-tutorial"
+version = "0.1.0"
+description = "biopython-tutorial"
+
+authors = [
+    "Darren Weber <dazza-codes@github.com>",
+]
+license = "Apache-2.0"
+
+readme = "README.md"  # Markdown files are supported
+repository = "https://github.com/dazza-codes/biopython-tutorial.git"
+homepage = "https://github.com/dazza-codes/biopython-tutorial"
+
+keywords = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Utilities",
+]
+
+include = ["biopython_tutorial/**/*"]
+exclude = ["tests/**/*"]
+
+packages = [{include = "biopython_tutorial"}]
+
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+biopython = "^1.79"
+pandas = "^1.5.0"
+matplotlib = "^3.6.0"
+
+
+[tool.poetry.group.all]
+optional = true
+
+[tool.poetry.group.all.dependencies]
+
+
+[tool.poetry.group.dev.dependencies]
+py-dev-deps = "^0.4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
