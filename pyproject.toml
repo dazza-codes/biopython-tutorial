@@ -42,6 +42,8 @@ optional = true
 
 [tool.poetry.group.dev.dependencies]
 py-dev-deps = "^0.4.0"
+jupyter = "^1.0.0"
+ipykernel = "^6.16.0"
 
 
 [build-system]
